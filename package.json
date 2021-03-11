@@ -2,7 +2,7 @@
   "name": "counter-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "cpx -C public/** public/** && rollup -c && cpx chrome-extension/**/*.* public",
+    "build": "cpx 'public/**' 'public/**' -C && rollup -c && cpx 'chrome-extension/**/*.*' 'public'",
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
